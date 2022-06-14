@@ -1,0 +1,11 @@
+<?php
+declare(strict_types=1);
+;?>
+<body>
+  <?php 
+  var_dump(checkdate(12,31,2022));
+  var_dump(checkdate(8,99,2025));
+  var_dump(checkdate(2,29,2024));
+  var_dump(checkdate(2,29,2025));
+  ;?>
+</body>
