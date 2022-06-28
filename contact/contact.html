@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>お問い合わせ</h2>
+    <form action="thankyou.php" name="inquiry" method="post">
+      <table border="1">
+        <tr>
+          <th>お名前</th>
+          <td><input type="text" name="simei" value="" /></td>
+        </tr>
+        <tr>
+          <th>メールアドレス</th>
+          <td><input type="text" name="email" value="" /></td>
+        </tr>
+        <tr>
+          <th>地域</th>
+          <td>
+            <select name="area" id="">
+              <option value=""></option>
+              <option value="北海道">北海道</option>
+              <option value="東北">東北</option>
+              <option value="関東">関東</option>
+              <option value="中部">中部</option>
+              <option value="近畿">近畿</option>
+              <option value="中国">中国</option>
+              <option value="四国">四国</option>
+              <option value="九州">九州</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>お問い合わせ種別</th>
+          <td>
+            <input
+              type="checkbox"
+              name="type[]"
+              value="ユーザー登録について"
+              id="confirm"
+            /><label for="confirm">ユーザー登録について</label>
+            <br>
+            <input
+              type="checkbox"
+              name="type[]"
+              value="商品に関するお問い合わせ"
+              id="contact"
+            /><label for="contact">商品に関するお問い合わせ</label>
+            <br>
+            <input
+              type="checkbox"
+              name="type[]"
+              value="返品について"
+              id="return"
+            /><label for="return">返品について</label>
+          </td>
+        </tr>
+        <tr>
+          <th>お問い合わせ内容</th>
+          <td><textarea name="inquiry" id="" cols="50" rows="3"></textarea></td>
+        </tr>
+        <tr>
+          <th>お得な情報をメールで受け取りますか？</th>
+          <td>
+            <input
+              id="received"
+              name="news_type"
+              type="radio"
+              value="受け取ります"
+            /><label for="received">受け取ります</label>
+            <br>
+            <input
+              id="not_received"
+              name="news_type"
+              type="radio"
+              value="受け取りません"
+            /><label for="not_received">受け取りません</label>
+          </td>
+        </tr>
+      </table>
+      <button type="submit" name="operation" value="send">送信する</button>
+    </form>
+  </body>
+</html>
